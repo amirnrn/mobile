@@ -8,8 +8,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint",
-        "predev": "npx ts-node src/shared/scripts/generate-manifests.ts",
-        "prebuild": "ts-node src/shared/scripts/generate-manifests.ts"
+        "predev": "node src/shared/scripts/generate-manifests.js",
+        "prebuild": "node src/shared/scripts/generate-manifests.js"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^2.12.0",
