@@ -1,6 +1,7 @@
 import AppContainer from "../../layouts/AppContainer";
 import WindowManager from "../windowManager/WindowManager";
 import HomeScreen from "./components/HomeScreen";
+import LockScreen from "./components/LockScreen";
 
 const MobileOS = () => {
     return (
@@ -8,6 +9,7 @@ const MobileOS = () => {
             <AppContainer>
                 <WindowManager />
                 <HomeScreen />
+                <LockScreen />
             </AppContainer>
         </>
     );

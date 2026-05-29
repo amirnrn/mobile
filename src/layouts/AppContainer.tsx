@@ -17,7 +17,7 @@ const AppContainer = ({ children }: { children: ReactNode }) => {
     return (
         <div
             ref={containerRef}
-            className="w-110 h-210 border-5 border-solid border-[#323232] relative"
+            className="w-110 h-210 border-5 border-solid border-[#323232] relative overflow-hidden bg-white"
             style={{
                 borderRadius: `${ApplicationConfig.appRadius + 5}px`,
             }}
