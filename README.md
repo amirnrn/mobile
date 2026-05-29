@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MobileOS
 
-## Getting Started
+A browser-based mobile operating system built with **Next.js**, **TypeScript**, and **Redux Toolkit**, featuring a window management system inspired by modern mobile operating systems.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📱 Mobile OS-style user interface
+- 🚀 Dynamic application registration and loading
+- 🪟 Window management system
+    - Open applications
+    - Minimize applications
+    - Restore applications
+    - Focus and z-index management
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ✨ Smooth app launch and minimize animations
+- 🎯 Icon-to-window transition effects inspired by iOS
+- 🧩 Extensible application manifest architecture
+- 📦 Centralized state management with Redux Toolkit
+- 🔧 Service-based architecture for UI actions and app lifecycle management
+- 🗂️ DOM registry system for advanced UI animations and window tracking
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project follows a layered architecture:
 
-## Learn More
+### App Manager
 
-To learn more about Next.js, take a look at the following resources:
+Responsible for application registration, metadata management, and app discovery.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### UI Actions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Handles application lifecycle operations and window animations such as opening, minimizing, restoring, and focus management.
 
-## Deploy on Vercel
+### UI Registry
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Maintains references to application windows and icons, enabling advanced animations and transitions without polluting application state.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Redux Store
+
+Acts as the single source of truth for runtime application state.
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Redux Toolkit
+- Tailwind CSS
+- Lucide Icons
+
+## Goals
+
+This project is an exploration of building a desktop/mobile operating system experience entirely within the browser while maintaining a scalable and maintainable architecture. The focus is on application lifecycle management, window orchestration, smooth animations, and clean separation of concerns.
+
+## Status
+
+🚧 Work in Progress
+
+Current development focuses on:
+
+- Window lifecycle improvements
+- Animation system refinements
+- Dock and navigation interactions
+- Multi-window management
+- Application persistence
+- Enhanced mobile OS behaviors
