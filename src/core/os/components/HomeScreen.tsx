@@ -4,7 +4,6 @@ import Dock from "./Dock";
 import ApplicationIcon from "@/shared/ui/ApplicationIcon";
 import { uiActionsService } from "@/core/services/uiActions.service";
 import { useAppManager } from "@/shared/hooks/useAppManager";
-import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setOpenedAppId } from "@/shared/redux/sharedSlices/app.slice";
 

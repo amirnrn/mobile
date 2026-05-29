@@ -8,7 +8,7 @@ export const useAppManager = () => {
     );
 
     useEffect(() => {
-        const unsubscribe = AppManagerServices.subscribe((e, id) => {
+        const unsubscribe = AppManagerServices.subscribe(() => {
             setApps(AppManagerServices.getAllApps());
             setOpenApps(AppManagerServices.getOpenApps());
         });

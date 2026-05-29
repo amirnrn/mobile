@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "@/assets/globals.css";
 import ProviderWrapper from "@/shared/provider/Provider";
 

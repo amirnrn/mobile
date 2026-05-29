@@ -1,4 +1,4 @@
-import { Rethink_Sans } from "next/font/google";
+import { ComponentType } from "react";
 import { IAppManifest } from "../../shared/type/appManifest.type";
 
 export class AppManager {
@@ -49,7 +49,7 @@ export class AppManager {
         );
     }
 
-    getAppComponent(appId: string): any {
+    getAppComponent(appId: string): ComponentType {
         const app = this.apps.get(appId);
         return app?.Component;
     }
